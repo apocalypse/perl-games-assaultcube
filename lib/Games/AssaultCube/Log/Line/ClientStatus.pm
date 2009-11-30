@@ -63,7 +63,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords CLA RVSF ADMIN cn frags gamemode
+=for stopwords CLA RVSF ADMIN cn frags gamemode ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::ClientStatus - Describes the ClientStatus event in a log line

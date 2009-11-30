@@ -98,7 +98,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords nextping playerlist
+=for stopwords nextping playerlist poco hostname ip
+
 =head1 NAME
 
 POE::Component::AssaultCube::ServerQuery::Server - Holds the server info

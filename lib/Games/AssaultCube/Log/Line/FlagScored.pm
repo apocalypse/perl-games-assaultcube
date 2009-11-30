@@ -36,7 +36,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords CLA RVSF
+=for stopwords CLA RVSF ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::FlagScored - Describes the FlagScored event in a log line

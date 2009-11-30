@@ -48,7 +48,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords isteam
+=for stopwords isteam ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::Says - Describes the Says event in a log line

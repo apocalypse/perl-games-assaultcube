@@ -36,7 +36,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords oldnick
+=for stopwords oldnick ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::ClientNickChange - Describes the ClientNickChange event in a log line

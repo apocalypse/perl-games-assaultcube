@@ -36,6 +36,7 @@ my $build = Module::Build->new(
 		'Moose::Role'			=> 0,
 		'MooseX::StrictConstructor'	=> 0,
 		'MooseX::POE::SweetArgs'	=> 0,
+		'Moose::Util::TypeConstraints'	=> 0,
 
 		# Socket stuff
 		'IO::Socket::INET'		=> 0,
@@ -60,12 +61,12 @@ my $build = Module::Build->new(
 
 	# include the standard stuff in META.yml
 	'meta_merge'		=> {
-		keywords	=> [ 'POE', 'AssaultCube' ],
-		resources	=> {
-			repository	=> 'http://github.com/apocalypse/perl-games-assaultcube',
-			license		=> 'http://dev.perl.org/licenses/',
-			bugtracker	=> 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Games-AssaultCube',
-			homepage	=> 'http://search.cpan.org/dist/Games-AssaultCube',
+		'keywords'	=> [ 'POE', 'AssaultCube' ],
+		'resources'	=> {
+			'repository'	=> 'http://github.com/apocalypse/perl-games-assaultcube',
+			'license'	=> 'http://dev.perl.org/licenses/',
+			'bugtracker'	=> 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Games-AssaultCube',
+			'homepage'	=> 'http://search.cpan.org/dist/Games-AssaultCube',
 		},
 	},
 );

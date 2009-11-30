@@ -634,6 +634,9 @@ sub parse_pingresponse {
 
 1;
 __END__
+
+=for stopwords todo
+
 =head1 NAME
 
 Games::AssaultCube::Utils - Various utilities for the AssaultCube modules

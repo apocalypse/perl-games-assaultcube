@@ -48,7 +48,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords CTF TDM gamemode
+=for stopwords CTF TDM gamemode datetime
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::DemoStop - Describes the DemoStop event in a log line

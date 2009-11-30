@@ -29,7 +29,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords ADMIN
+=for stopwords admin ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::ClientChangeRole - Describes the ClientChangeRole event in a log line

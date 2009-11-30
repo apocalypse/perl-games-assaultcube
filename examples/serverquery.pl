@@ -12,23 +12,9 @@ if ( defined $ARGV[0] ) {
 
 	my $response = $query->run;
 	if ( defined $response ) {
-#		print "Server '" . $response->desc_nocolor . "' is running with " . $response->players . " players on map " .
-#		$response->map . " on mode(" . $response->gamemode_name . ")\n";
-#		use Data::Dumper;
-#		print Dumper( $response );
-#		print "datagram length: " . length( $response->datagram ) . "\n";
-
-
-
-
-#use Storable qw( nfreeze );
-#use MIME::Base64 qw( encode_base64 );
-
-#print encode_base64( nfreeze( [$response->datagram] ), '' ) . "\n";
-
-use Data::HexDump;
-print HexDump( $response->datagram );
-
+		print "Server '" . $response->desc_nocolor . "' is running with " . $response->players . " players on map " .
+		$response->map . " on mode(" . $response->gamemode_name . ")\n";
+		print "datagram length: " . length( $response->datagram ) . "\n";
 	} else {
 		print "Server is not responding!\n";
 	}

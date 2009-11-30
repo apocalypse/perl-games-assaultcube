@@ -53,7 +53,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords mapname playername
+=for stopwords mapname playername ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::CallVote - Describes the CallVote event in a log line

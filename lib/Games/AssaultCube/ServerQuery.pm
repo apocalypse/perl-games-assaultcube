@@ -4,6 +4,7 @@ package Games::AssaultCube::ServerQuery;
 # import the Moose stuff
 use Moose;
 use MooseX::StrictConstructor;
+use Moose::Util::TypeConstraints;
 
 # Initialize our version
 use vars qw( $VERSION );
@@ -22,20 +23,22 @@ has 'server' => (
 );
 
 # <mst> Apocalypse: { my $port_spec = subtype as Int => where { ... }; has 'attr' => (isa => $port_spec, ...); }
-my $port_type = subtype as 'Int' => where {
-	if ( ! defined $_ ) { return 1 }
-	if ( $_ <= 0 or $_ > 65535 ) {
-		return 0;
-	} else {
-		return 1;
-	}
-};
+{
+	my $port_type = subtype as 'Int' => where {
+		if ( $_ <= 0 or $_ > 65535 ) {
+			return 0;
+		} else {
+			return 1;
+		}
+	};
 
-has 'port' => (
-	isa		=> $port_type,
-	is		=> 'rw',
-	default		=> default_port(),
-);
+	has 'port' => (
+		isa		=> $port_type,
+	#	isa		=> 'Int',
+		is		=> 'rw',
+		default		=> default_port(),
+	);
+}
 
 has 'timeout' => (
 	isa		=> 'Int',
@@ -118,7 +121,7 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords PxL playerlist
+=for stopwords PxL playerlist PHP hostname ip
 
 =head1 NAME
 

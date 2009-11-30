@@ -42,7 +42,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords admin configfile
+=for stopwords admin configfile ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::ClientAdmin - Describes the ClientAdmin event in a log line

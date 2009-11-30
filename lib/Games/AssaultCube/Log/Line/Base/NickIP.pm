@@ -20,6 +20,9 @@ has 'nick' => (
 
 1;
 __END__
+
+=for stopwords ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::Base::NickIP - The NickIP role for subclasses

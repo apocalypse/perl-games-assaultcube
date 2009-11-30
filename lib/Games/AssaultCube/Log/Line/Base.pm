@@ -38,6 +38,9 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 __END__
+
+=for stopwords tostr
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::Base - The base log line object

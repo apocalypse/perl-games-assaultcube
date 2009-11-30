@@ -196,7 +196,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords CTF TDM desc gamemode pingtime pingmode pongflag pongflags tohash
+=for stopwords CTF TDM desc gamemode pingtime pingmode pongflag pongflags tohash pong timestamp
+
 =head1 NAME
 
 Games::AssaultCube::ServerQuery::Response - Holds the various data from a ServerQuery response

@@ -25,6 +25,9 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 __END__
+
+=for stopwords ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::FlagReturned - Describes the FlagReturned event in a log line

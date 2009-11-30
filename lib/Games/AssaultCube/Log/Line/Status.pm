@@ -51,6 +51,9 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 __END__
+
+=for stopwords datetime kbytes sec
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::Status - Describes the Status event in a log line

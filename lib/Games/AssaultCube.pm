@@ -9,6 +9,8 @@ $VERSION = '0.03';
 1;
 __END__
 
+=for stopwords AnnoCPAN CPAN RT
+
 =head1 NAME
 
 Games::AssaultCube - The AssaultCube perl libraries

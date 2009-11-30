@@ -79,7 +79,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords masterserver tohash
+=for stopwords masterserver tohash URI hashrefs ip
+
 =head1 NAME
 
 Games::AssaultCube::MasterserverQuery::Response - Holds the various data from a MasterserverQuery response

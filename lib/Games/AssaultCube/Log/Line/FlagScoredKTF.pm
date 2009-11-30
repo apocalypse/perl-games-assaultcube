@@ -40,7 +40,8 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords KTF
+=for stopwords KTF ip
+
 =head1 NAME
 
 Games::AssaultCube::Log::Line::FlagScoredKTF - Describes the FlagScoredKTF event in a log line

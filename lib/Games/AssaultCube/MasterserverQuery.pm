@@ -86,7 +86,7 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords masterserver CubeStats.net
+=for stopwords masterserver CubeStats.net HTTP URI XML hostname ip useragent
 
 =head1 NAME
 
