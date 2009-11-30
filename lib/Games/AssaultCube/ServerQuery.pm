@@ -21,18 +21,20 @@ has 'server' => (
 	required	=> 1,
 );
 
-# TODO try to use a proper Moose::Type subclass for ports...
+# <mst> Apocalypse: { my $port_spec = subtype as Int => where { ... }; has 'attr' => (isa => $port_spec, ...); }
+my $port_type = subtype as 'Int' => where {
+	if ( ! defined $_ ) { return 1 }
+	if ( $_ <= 0 or $_ > 65535 ) {
+		return 0;
+	} else {
+		return 1;
+	}
+};
+
 has 'port' => (
-	isa		=> 'Int',
+	isa		=> $port_type,
 	is		=> 'rw',
 	default		=> default_port(),
-	where		=> sub {
-		if ( $_ <= 0 or $_ > 65535 ) {
-			return 0;
-		} else {
-			return 1;
-		}
-	},
 );
 
 has 'timeout' => (
@@ -117,6 +119,7 @@ __PACKAGE__->meta->make_immutable;
 __END__
 
 =for stopwords PxL playerlist
+
 =head1 NAME
 
 Games::AssaultCube::ServerQuery - Queries a running AssaultCube server for information

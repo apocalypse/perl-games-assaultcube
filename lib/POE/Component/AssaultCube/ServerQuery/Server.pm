@@ -12,8 +12,6 @@ $VERSION = '0.03';
 use Games::AssaultCube::Utils qw( default_port );
 use Time::HiRes qw( time );
 
-#$|++;
-
 # TODO improve validation for everything here, ha!
 
 has 'ID' => (

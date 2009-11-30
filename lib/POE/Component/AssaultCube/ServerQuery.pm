@@ -20,8 +20,6 @@ use POE::Filter::Stream;
 use Socket qw( INADDR_ANY );
 use Time::HiRes qw( time );
 
-#$|++;
-
 # TODO improve validation for everything here, ha!
 
 has 'alias' => (
@@ -411,6 +409,7 @@ __PACKAGE__->meta->make_immutable;
 __END__
 
 =for stopwords addserver clearservers delserver serverlist
+
 =head1 NAME
 
 POE::Component::AssaultCube::ServerQuery - Queries a running AssaultCube server for information
