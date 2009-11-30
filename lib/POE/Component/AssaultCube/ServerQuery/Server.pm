@@ -98,7 +98,7 @@ __PACKAGE__->meta->make_immutable;
 1;
 __END__
 
-=for stopwords nextping playerlist poco hostname ip
+=for stopwords nextping playerlist PoCo hostname ip
 
 =head1 NAME
 
