@@ -7,7 +7,7 @@ use MooseX::StrictConstructor;
 
 # Initialize our version
 use vars qw( $VERSION );
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use Games::AssaultCube::Utils qw( default_port );
 use Time::HiRes qw( time );

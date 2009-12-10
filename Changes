@@ -1,5 +1,9 @@
 Revision history for Perl extension Games::AssaultCube
 
+* 0.04
+
+	Fixed Class::MOP deprecation of "get_attribute_map" function, thanks CPANTESTERS!
+
 * 0.03
 
 	Added POE::Component::AssaultCube::ServerQuery

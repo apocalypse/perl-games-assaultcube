@@ -4,7 +4,7 @@ use Moose::Role;
 
 # Initialize our version
 use vars qw( $VERSION );
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 has 'ip' => (
 	isa		=> 'Str',

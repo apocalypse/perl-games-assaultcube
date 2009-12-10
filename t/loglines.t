@@ -820,7 +820,7 @@ sub test_line {
 
 	# Make sure we have no "unexpected" attributes present in the object
 	my $found = 0;
-	foreach my $attr ( keys %{ $log->meta->get_attribute_map } ) {
+	foreach my $attr ( $log->meta->get_attribute_list ) {
 		if ( ! exists $data->{'attrs'}->{ $attr } and $attr ne 'tostr' ) {
 			fail( "Unknown attribute - $attr" );
 			$found++;

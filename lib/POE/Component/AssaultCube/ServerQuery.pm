@@ -7,7 +7,7 @@ use MooseX::StrictConstructor;
 
 # Initialize our version
 use vars qw( $VERSION );
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 # get some utility stuff
 use Games::AssaultCube::ServerQuery::Response;

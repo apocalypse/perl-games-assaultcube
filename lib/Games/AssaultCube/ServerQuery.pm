@@ -8,7 +8,7 @@ use Moose::Util::TypeConstraints;
 
 # Initialize our version
 use vars qw( $VERSION );
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 # get some utility stuff
 use Games::AssaultCube::Utils qw( default_port tostr get_ac_pingport );
